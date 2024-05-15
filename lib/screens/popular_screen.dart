@@ -19,30 +19,29 @@ class _PopularScreenState extends State<PopularScreen> {
     super.initState();
     apiPopular = ApiPopular();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Peliculas Populares'),),
-        body: FutureBuilder(
-          future: apiPopular!.getAllPopular(),
-          builder: (context,AsyncSnapshot<List<PopularModel>?> snapshot){
-            if(snapshot.hasData){
-              return ListView.separated(
-                separatorBuilder: (context, index) => SizedBox(height: 10,),  
-                  itemCount: snapshot.data!.length,
-                  itemBuilder: (context,index)=>PopularView(popularModel: snapshot.data![index],)
-                  );
+      appBar: AppBar(title: Text('Peliculas Populares'),),
+      body: FutureBuilder(
+        future: apiPopular?.getAllPopular(),
+        builder: (context, AsyncSnapshot<List<PopularModel>?> snapshot){
+          if(snapshot.hasData){
+            return ListView.separated(
+              separatorBuilder: (context, index) => SizedBox(height: 10,),
+              itemCount: snapshot.data!.length,
+              itemBuilder: (context, index) => PopularView(popularModel: snapshot.data![index],) 
+              );
+          }else{
+            if(snapshot.hasError){
+              return Text('${snapshot.error}');
             }else{
-              if (snapshot.hasError) {
-                return Text('${snapshot.error}');
-              }else{
-                return Center(child: CircularProgressIndicator(),);
-              }
+              return Center (child: CircularProgressIndicator(),);
             }
           }
-        ),
+        },
+      ),
     );
   }
 }

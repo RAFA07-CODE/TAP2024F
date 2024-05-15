@@ -1,11 +1,14 @@
-2024/05/10-19:46:48.290 6dac Reusing MANIFEST C:\Users\rafav\AppData\Local\Temp\flutter_tools.9b9fd708\flutter_tools_chrome_device.21350f83\Default\Sync Data\LevelDB/MANIFEST-000001
-2024/05/10-19:46:48.316 6dac Recovering log #18
-2024/05/10-19:46:48.317 6dac Reusing old log C:\Users\rafav\AppData\Local\Temp\flutter_tools.9b9fd708\flutter_tools_chrome_device.21350f83\Default\Sync Data\LevelDB/000018.log 
-2024/05/10-19:46:48.321 6dac Delete type=0 #3
-2024/05/10-19:46:48.322 6dac Delete type=0 #4
-2024/05/10-19:46:48.322 6dac Delete type=0 #7
-2024/05/10-19:46:48.322 6dac Delete type=2 #8
-2024/05/10-19:46:48.322 6dac Delete type=0 #10
-2024/05/10-19:46:48.322 6dac Delete type=2 #11
-2024/05/10-19:46:48.322 6dac Delete type=0 #13
-2024/05/10-19:46:48.323 6dac Delete type=2 #14
+2024/05/12-21:20:31.528 292c Reusing MANIFEST C:\Users\rafav\AppData\Local\Temp\flutter_tools.6cab75c2\flutter_tools_chrome_device.5e66291e\Default\Sync Data\LevelDB/MANIFEST-000001
+2024/05/12-21:20:31.530 292c Recovering log #18
+2024/05/12-21:20:31.531 292c Reusing old log C:\Users\rafav\AppData\Local\Temp\flutter_tools.6cab75c2\flutter_tools_chrome_device.5e66291e\Default\Sync Data\LevelDB/000018.log 
+2024/05/12-21:20:31.543 292c Delete type=0 #3
+2024/05/12-21:20:31.543 292c Delete type=0 #4
+2024/05/12-21:20:31.544 292c Delete type=0 #7
+2024/05/12-21:20:31.544 292c Delete type=2 #8
+2024/05/12-21:20:31.544 292c Delete type=0 #10
+2024/05/12-21:20:31.544 292c Delete type=2 #11
+2024/05/12-21:20:31.544 292c Delete type=0 #13
+2024/05/12-21:20:31.544 292c Delete type=2 #14
+2024/05/12-21:34:31.003 2c90 Level-0 table #23: started
+2024/05/12-21:34:31.014 2c90 Level-0 table #23: 94360 bytes OK
+2024/05/12-21:34:31.018 2c90 Delete type=0 #18

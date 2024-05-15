@@ -3,27 +3,44 @@ import 'package:flutter/material.dart';
 import 'package:tap2024/models/popular_model.dart';
 
 class PopularView extends StatelessWidget {
-   PopularView({super.key,this.popularModel});
+   PopularView({super.key, this.popularModel});
 
-
-PopularModel? popularModel;
+    PopularModel ? popularModel;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      //height: 200, 
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10)
+        borderRadius: BorderRadius.circular(20),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: CachedNetworkImage(
-          fit: BoxFit.fill,
-          imageUrl: 'https://image.tmdb.org/t/p/w500/${popularModel!.backdropPath}',
-          placeholder: (context,url) => const CircularProgressIndicator(),
-          errorWidget: (context,url,error) => Image.network('https://edteam-media.s3.amazonaws.com/blogs/big/2ab53939-9b50-47dd-b56e-38d4ba3cc0f0.png'),
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            CachedNetworkImage ( 
+            width: MediaQuery.of(context).size.width,
+            imageUrl: 'https://image.tmdb.org/t/p/w500/${popularModel!.backdropPath}',
+            placeholder: (context, url) => const CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Image.network('https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/image-not-found-icon.png'), 
+                ),
+                Container(
+                  height: 60,
+                  color: Colors.black54,
+                  child: ListTile(
+                    title: Text(popularModel!.title, style: TextStyle(color: Colors.white),),
+                    subtitle: Text(popularModel!.releaseDate, style: TextStyle(color: Colors.white),maxLines: 1,),
+                    trailing: IconButton(
+                      onPressed:() => Navigator.pushNamed(context, '/detail',arguments: popularModel),
+                      icon: const Icon(Icons.chevron_right),
+                      color: Colors.white,
+                    )
+                  ),
+                )
+          ],
         ),
-      ),
+      )
     );
   }
 }

@@ -1,7 +1,5 @@
-2024/05/12-21:20:31.759 4fb8 Reusing MANIFEST C:\Users\rafav\AppData\Local\Temp\flutter_tools.6cab75c2\flutter_tools_chrome_device.5e66291e\Default\Local Storage\leveldb/MANIFEST-000001
-2024/05/12-21:20:31.769 4fb8 Recovering log #4
-2024/05/12-21:20:31.776 4fb8 Reusing old log C:\Users\rafav\AppData\Local\Temp\flutter_tools.6cab75c2\flutter_tools_chrome_device.5e66291e\Default\Local Storage\leveldb/000004.log 
-2024/05/12-21:20:31.778 4fb8 Delete type=0 #3
-2024/05/12-23:39:24.783 3288 Level-0 table #8: started
-2024/05/12-23:39:24.794 3288 Level-0 table #8: 27136 bytes OK
-2024/05/12-23:39:24.802 3288 Delete type=0 #4
+2024/05/14-17:20:04.248 2cb0 Reusing MANIFEST C:\Users\rafav\AppData\Local\Temp\flutter_tools.527b884a\flutter_tools_chrome_device.aac396cb\Default\Local Storage\leveldb/MANIFEST-000001
+2024/05/14-17:20:04.260 2cb0 Recovering log #7
+2024/05/14-17:20:04.263 2cb0 Reusing old log C:\Users\rafav\AppData\Local\Temp\flutter_tools.527b884a\flutter_tools_chrome_device.aac396cb\Default\Local Storage\leveldb/000007.log 
+2024/05/14-17:20:04.264 2cb0 Delete type=0 #3
+2024/05/14-17:20:04.265 2cb0 Delete type=0 #4
